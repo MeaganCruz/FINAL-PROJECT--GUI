@@ -209,13 +209,13 @@ def main(username):
     logo_button.config(image=logo_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#5AACDB", command=switch_to_employee_or_admin_portal)
     UNIS_corporation_label = gui.label_design(frame, 61, 922, "UNIS Corporation", "#5AACDB", "white", ("Century Gothic", 11, 'bold'))
     log_out_image = ImageTk.PhotoImage(Image.open("Log_Out_Logo.png").resize((39, 32)))
-    log_out_button = gui.button_design(frame, 2, 1001, 259, 79, "#5EB0DE", "white", "  Log Out",("Century Gothic", 12, 'bold'))
+    log_out_button = gui.button_design(frame, 2, 1001, 259, 79, "blue", "white", "  Log Out",("Century Gothic", 12, 'bold'))
     log_out_button.config(image=log_out_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#5EB0DE",  command=log_out)
-    update_button = gui.button_design(frame, 1486, 857, 118, 40, "#5CABD7", "white", "UPDATE", ("Century Gothic", 13))
+    update_button = gui.button_design(frame, 1486, 857, 118, 40, "green", "white", "UPDATE", ("Century Gothic", 13))
     update_button.config(command=updateData)
-    delete_button = gui.button_design(frame, 1621, 857, 118, 40, "#0C385E", "white", "DELETE", ("Century Gothic", 13))
+    delete_button = gui.button_design(frame, 1621, 857, 118, 40, "red", "white", "DELETE", ("Century Gothic", 13))
     delete_button.config(command=deleteData)
-    cancel_button = gui.button_design(frame, 1756, 857, 118, 40, "#1E6CAB", "white", "CANCEL", ("Century Gothic", 13))
+    cancel_button = gui.button_design(frame, 1756, 857, 118, 40, "gray", "white", "CANCEL", ("Century Gothic", 13))
     cancel_button.config(command=cancelData)
 
     window.state('zoomed')  # Functionality to keep the page on auto-full screen
